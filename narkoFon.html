@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substance Vibe</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #2b1b3d);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            color: #00ff99;
+            text-shadow: 0 0 10px #00ff99;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #b3b3b3;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #2e2e2e;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #00ff99;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #00ff99;
+        }
+        .card h2 {
+            margin: 0 0 10px;
+            color: #ff00ff;
+            font-size: 1.5em;
+        }
+        .card p {
+            margin: 5px 0;
+            color: #e0e0e0;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Substance Vibe</h1>
+        <p>Know the game, don’t play it</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>Марихуана (Каннабис)</h2>
+            <p><strong>Что это:</strong> Растительное из конопли.</p>
+            <p><strong>Эффект:</strong> Расслабление, эйфория, иногда хихишки.</p>
+            <p><strong>Как выглядит:</strong> Сушеные листья или "шишки".</p>
+        </div>
+        <div class="card">
+            <h2>Кокаин</h2>
+            <p><strong>Что это:</strong> Стимулятор из листьев коки.</p>
+            <p><strong>Эффект:</strong> Бодрость, уверенность, краткий кайф.</p>
+            <p><strong>Как выглядит:</strong> Белый порошок или "камни".</p>
+        </div>
+        <div class="card">
+            <h2>Героин</h2>
+            <p><strong>Что это:</strong> Опиоид из морфина.</p>
+            <p><strong>Эффект:</strong> Сильная эйфория, апатия, "кайф".</p>
+            <p><strong>Как выглядит:</strong> Белый или коричневый порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Амфетамин</h2>
+            <p><strong>Что это:</strong> Синтетический стимулятор.</p>
+            <p><strong>Эффект:</strong> Активность, концентрация, бессонница.</p>
+            <p><strong>Как выглядит:</strong> Порошок или таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Метамфетамин</h2>
+            <p><strong>Что это:</strong> Мощный синтетический стимулятор.</p>
+            <p><strong>Эффект:</strong> Энергия, эйфория, долгий "приход".</p>
+            <p><strong>Как выглядит:</strong> Кристаллы ("лед") или порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Экстази (MDMA)</h2>
+            <p><strong>Что это:</strong> Синтетический психоактив.</p>
+            <p><strong>Эффект:</strong> Эйфория, близость, прилив энергии.</p>
+            <p><strong>Как выглядит:</strong> Таблетки с узорами или кристаллы.</p>
+        </div>
+        <div class="card">
+            <h2>ЛСД (Диэтиламид лизергиновой кислоты)</h2>
+            <p><strong>Что это:</strong> Психоделик.</p>
+            <p><strong>Эффект:</strong> Галлюцинации, изменение времени.</p>
+            <p><strong>Как выглядит:</strong> "Марки" или капли.</p>
+        </div>
+        <div class="card">
+            <h2>Морфин</h2>
+            <p><strong>Что это:</strong> Опиоид из опиума.</p>
+            <p><strong>Эффект:</strong> Эйфория, обезболивание.</p>
+            <p><strong>Как выглядит:</strong> Порошок или жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Оксикодон</h2>
+            <p><strong>Что это:</strong> Полусинтетический опиоид.</p>
+            <p><strong>Эффект:</strong> Расслабление, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Фентанил</h2>
+            <p><strong>Что это:</strong> Синтетический опиоид, сверхмощный.</p>
+            <p><strong>Эффект:</strong> Глубокое расслабление, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок или патчи.</p>
+        </div>
+        <div class="card">
+            <h2>Кодеин</h2>
+            <p><strong>Что это:</strong> Легкий опиоид.</p>
+            <p><strong>Эффект:</strong> Успокоение, слабая эйфория.</p>
+            <p><strong>Как выглядит:</strong> Сироп или таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Гидрокодон</h2>
+            <p><strong>Что это:</strong> Опиоид средней силы.</p>
+            <p><strong>Эффект:</strong> Расслабление, легкий кайф.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Метадон</h2>
+            <p><strong>Что это:</strong> Синтетический опиоид.</p>
+            <p><strong>Эффект:</strong> Долгое расслабление, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Таблетки или жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Бупренорфин</h2>
+            <p><strong>Что это:</strong> Частичный опиоид.</p>
+            <p><strong>Эффект:</strong> Мягкое расслабление.</p>
+            <p><strong>Как выглядит:</strong> Пленки или таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Трамадол</h2>
+            <p><strong>Что это:</strong> Синтетический опиоид.</p>
+            <p><strong>Эффект:</strong> Обезболивание, легкая эйфория.</p>
+            <p><strong>Как выглядит:</strong> Таблетки или капсулы.</p>
+        </div>
+        <div class="card">
+            <h2>Декстрометорфан</h2>
+            <p><strong>Что это:</strong> Диссоциатив в сиропах.</p>
+            <p><strong>Эффект:</strong> Легкие галлюцинации, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Сироп или таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Кетамин</h2>
+            <p><strong>Что это:</strong> Диссоциативный анестетик.</p>
+            <p><strong>Эффект:</strong> Отрыв от реальности, галлюцинации.</p>
+            <p><strong>Как выглядит:</strong> Порошок или жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>PCP (Фенциклидин)</h2>
+            <p><strong>Что это:</strong> Диссоциатив.</p>
+            <p><strong>Эффект:</strong> Сильные галлюцинации, агрессия.</p>
+            <p><strong>Как выглядит:</strong> Порошок или жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>GHB (Гамма-гидроксибутират)</h2>
+            <p><strong>Что это:</strong> Депрессант.</p>
+            <p><strong>Эффект:</strong> Эйфория, сонливость.</p>
+            <p><strong>Как выглядит:</strong> Прозрачная жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Мефедрон</h2>
+            <p><strong>Что это:</strong> Синтетический катинон.</p>
+            <p><strong>Эффект:</strong> Энергия, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок или кристаллы.</p>
+        </div>
+        <div class="card">
+            <h2>Альфа-PVP (Флакка)</h2>
+            <p><strong>Что это:</strong> Синтетический катинон.</p>
+            <p><strong>Эффект:</strong> Мощный стимулятор, психозы.</p>
+            <p><strong>Как выглядит:</strong> Кристаллы.</p>
+        </div>
+        <div class="card">
+            <h2>Соли (Синтетические катиноны)</h2>
+            <p><strong>Что это:</strong> Стимуляторы.</p>
+            <p><strong>Эффект:</strong> Энергия, паранойя.</p>
+            <p><strong>Как выглядит:</strong> Порошок или кристаллы.</p>
+        </div>
+        <div class="card">
+            <h2>Спайс (Синтетические каннабиноиды)</h2>
+            <p><strong>Что это:</strong> Аналог травы.</p>
+            <p><strong>Эффект:</strong> Эйфория, тревога.</p>
+            <p><strong>Как выглядит:</strong> Сушеная смесь.</p>
+        </div>
+        <div class="card">
+            <h2>ДMT (Диметилтриптамин)</h2>
+            <p><strong>Что это:</strong> Психоделик.</p>
+            <p><strong>Эффект:</strong> Короткие мощные "трипы".</p>
+            <p><strong>Как выглядит:</strong> Порошок или кристаллы.</p>
+        </div>
+        <div class="card">
+            <h2>Псилоцибин</h2>
+            <p><strong>Что это:</strong> Психоделик из грибов.</p>
+            <p><strong>Эффект:</strong> Галлюцинации, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Грибы или порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Мескалин</h2>
+            <p><strong>Что это:</strong> Психоделик из кактусов.</p>
+            <p><strong>Эффект:</strong> Яркие видения.</p>
+            <p><strong>Как выглядит:</strong> Порошок или кактус.</p>
+        </div>
+        <div class="card">
+            <h2>Айяуаска</h2>
+            <p><strong>Что это:</strong> Психоделический отвар.</p>
+            <p><strong>Эффект:</strong> Долгие видения, очищение.</p>
+            <p><strong>Как выглядит:</strong> Темная жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Сальвия (Шалфей предсказателей)</h2>
+            <p><strong>Что это:</strong> Психоделик.</p>
+            <p><strong>Эффект:</strong> Короткие странные трипы.</p>
+            <p><strong>Как выглядит:</strong> Листья.</p>
+        </div>
+        <div class="card">
+            <h2>Кратом</h2>
+            <p><strong>Что это:</strong> Растительный стимулятор/опиоид.</p>
+            <p><strong>Эффект:</strong> Энергия или расслабление.</p>
+            <p><strong>Как выглядит:</strong> Листья или порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Ибогаин</h2>
+            <p><strong>Что это:</strong> Психоделик из корня.</p>
+            <p><strong>Эффект:</strong> Долгие трипы, introspeкция.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Барбитураты</h2>
+            <p><strong>Что это:</strong> Депрессанты.</p>
+            <p><strong>Эффект:</strong> Сонливость, расслабление.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Диазепам</h2>
+            <p><strong>Что это:</strong> Бензодиазепин.</p>
+            <p><strong>Эффект:</strong> Успокоение, расслабление.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Алпразолам (Ксанакс)</h2>
+            <p><strong>Что это:</strong> Бензодиазепин.</p>
+            <p><strong>Эффект:</strong> Быстрое успокоение.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Лоразепам</h2>
+            <p><strong>Что это:</strong> Бензодиазепин.</p>
+            <p><strong>Эффект:</strong> Мягкое успокоение.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Клоназепам</h2>
+            <p><strong>Что это:</strong> Бензодиазепин.</p>
+            <p><strong>Эффект:</strong> Долгое успокоение.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Темазепам</h2>
+            <p><strong>Что это:</strong> Бензодиазепин.</p>
+            <p><strong>Эффект:</strong> Сонливость.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Феназепам</h2>
+            <p><strong>Что это:</strong> Бензодиазепин.</p>
+            <p><strong>Эффект:</strong> Сильное успокоение.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Золпидем</h2>
+            <p><strong>Что это:</strong> Снотворное.</p>
+            <p><strong>Эффект:</strong> Быстрый сон, иногда трипы.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Зопиклон</h2>
+            <p><strong>Что это:</strong> Снотворное.</p>
+            <p><strong>Эффект:</strong> Сон, легкие галлюцинации.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Прегабалин (Лирика)</h2>
+            <p><strong>Что это:</strong> Антиконвульсант.</p>
+            <p><strong>Эффект:</strong> Расслабление, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Капсулы.</p>
+        </div>
+        <div class="card">
+            <h2>Габапентин</h2>
+            <p><strong>Что это:</strong> Антиконвульсант.</p>
+            <p><strong>Эффект:</strong> Мягкое расслабление.</p>
+            <p><strong>Как выглядит:</strong> Капсулы.</p>
+        </div>
+        <div class="card">
+            <h2>Карфентанил</h2>
+            <p><strong>Что это:</strong> Опиоид, экстремально мощный.</p>
+            <p><strong>Эффект:</strong> Глубокий "кайф".</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Суфентанил</h2>
+            <p><strong>Что это:</strong> Опиоид.</p>
+            <p><strong>Эффект:</strong> Сильное обезболивание.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Альфентанил</h2>
+            <p><strong>Что это:</strong> Опиоид.</p>
+            <p><strong>Эффект:</strong> Короткий эффект.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Ремифентанил</h2>
+            <p><strong>Что это:</strong> Опиоид.</p>
+            <p><strong>Эффект:</strong> Быстрый "приход".</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>ТГК (Тетрагидроканнабинол)</h2>
+            <p><strong>Что это:</strong> Активное в марихуане.</p>
+            <p><strong>Эффект:</strong> Эйфория, расслабление.</p>
+            <p><strong>Как выглядит:</strong> Масло или смола.</p>
+        </div>
+        <div class="card">
+            <h2>КБД (Каннабидиол)</h2>
+            <p><strong>Что это:</strong> Из конопли, не психоактивен.</p>
+            <p><strong>Эффект:</strong> Успокоение.</p>
+            <p><strong>Как выглядит:</strong> Масло или капсулы.</p>
+        </div>
+        <div class="card">
+            <h2>2C-B</h2>
+            <p><strong>Что это:</strong> Психоделик.</p>
+            <p><strong>Эффект:</strong> Яркие цвета, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок или таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>2C-I</h2>
+            <p><strong>Что это:</strong> Психоделик.</p>
+            <p><strong>Эффект:</strong> Визуалы, стимуляция.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>DOB</h2>
+            <p><strong>Что это:</strong> Психоделик.</p>
+            <p><strong>Эффект:</strong> Долгие трипы.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>DOM</h2>
+            <p><strong>Что это:</strong> Психоделик.</p>
+            <p><strong>Эффект:</strong> Мягкие видения.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>NBOMe</h2>
+            <p><strong>Что это:</strong> Психоделик.</p>
+            <p><strong>Эффект:</strong> Сильные галлюцинации.</p>
+            <p><strong>Как выглядит:</strong> "Марки".</p>
+        </div>
+        <div class="card">
+            <h2>Метилон</h2>
+            <p><strong>Что это:</strong> Синтетический стимулятор.</p>
+            <p><strong>Эффект:</strong> Эйфория, энергия.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Бутыл (Бутилон)</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Легкая эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Эфедрин</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Бодрость, энергия.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Псевдоэфедрин</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Легкая бодрость.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Кат (Катин)</h2>
+            <p><strong>Что это:</strong> Растительный стимулятор.</p>
+            <p><strong>Эффект:</strong> Энергия.</p>
+            <p><strong>Как выглядит:</strong> Листья.</p>
+        </div>
+        <div class="card">
+            <h2>MDA</h2>
+            <p><strong>Что это:</strong> Психоделик/стимулятор.</p>
+            <p><strong>Эффект:</strong> Эйфория, эмпатия.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>MDEA</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Мягкая эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>PMMA</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Энергия, перегрев.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>4-MEC</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Эйфория, энергия.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Пентедрон</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Бодрость, паранойя.</p>
+            <p><strong>Как выглядит:</strong> Кристаллы.</p>
+        </div>
+        <div class="card">
+            <h2>Метилфенидат</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Концентрация, энергия.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Модафинил</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Бодрость, ясность.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Тарен</h2>
+            <p><strong>Что это:</strong> Антидот, при злоупотреблении — трипы.</p>
+            <p><strong>Эффект:</strong> Галлюцинации.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Апоморфин</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Тошнота, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Пропофол</h2>
+            <p><strong>Что это:</strong> Анестетик.</p>
+            <p><strong>Эффект:</strong> Сонливость, "кайф".</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Кломипрамин</h2>
+            <p><strong>Что это:</strong> Антидепрессант, при злоупотреблении — эйфория.</p>
+            <p><strong>Эффект:</strong> Легкий подъем.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Флуоксетин</h2>
+            <p><strong>Что это:</strong> Антидепрессант, при злоупотреблении — стимуляция.</p>
+            <p><strong>Эффект:</strong> Энергия.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Сибутрамин</h2>
+            <p><strong>Что это:</strong> Подавитель аппетита.</p>
+            <p><strong>Эффект:</strong> Энергия.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Дезоморфин</h2>
+            <p><strong>Что это:</strong> Опиоид ("крокодил").</p>
+            <p><strong>Эффект:</strong> Сильный кайф.</p>
+            <p><strong>Как выглядит:</strong> Грязный порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Этилморфин</h2>
+            <p><strong>Что это:</strong> Опиоид.</p>
+            <p><strong>Эффект:</strong> Легкая эйфория.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Тропикамид</h2>
+            <p><strong>Что это:</strong> Глазные капли, при злоупотреблении — трипы.</p>
+            <p><strong>Эффект:</strong> Галлюцинации.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Баклосан (Баклофен)</h2>
+            <p><strong>Что это:</strong> Миорелаксант.</p>
+            <p><strong>Эффект:</strong> Расслабление, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Туссин (Декстрометорфан)</h2>
+            <p><strong>Что это:</strong> Сироп от кашля.</p>
+            <p><strong>Эффект:</strong> Легкие трипы.</p>
+            <p><strong>Как выглядит:</strong> Сироп.</p>
+        </div>
+        <div class="card">
+            <h2>Корвалол (Фенобарбитал)</h2>
+            <p><strong>Что это:</strong> Успокоительное.</p>
+            <p><strong>Эффект:</strong> Сонливость.</p>
+            <p><strong>Как выглядит:</strong> Капли.</p>
+        </div>
+        <div class="card">
+            <h2>Дimenhydrinate (Драмина)</h2>
+            <p><strong>Что это:</strong> От укачивания, при злоупотреблении — трипы.</p>
+            <p><strong>Эффект:</strong> Галлюцинации.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Атропин</h2>
+            <p><strong>Что это:</strong> Яд/лекарство.</p>
+            <p><strong>Эффект:</strong> Галлюцинации, сухость.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Скополамин</h2>
+            <p><strong>Что это:</strong> Диссоциатив.</p>
+            <p><strong>Эффект:</strong> Амнезия, трипы.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Лоперамід</h2>
+            <p><strong>Что это:</strong> От диареи, при злоупотреблении — опиоидный кайф.</p>
+            <p><strong>Эффект:</strong> Расслабление.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Хлороформ</h2>
+            <p><strong>Что это:</strong> Анестетик.</p>
+            <p><strong>Эффект:</strong> Сонливость.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Эфир</h2>
+            <p><strong>Что это:</strong> Анестетик.</p>
+            <p><strong>Эффект:</strong> Эйфория, сон.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Закись азота (Веселящий газ)</h2>
+            <p><strong>Что это:</strong> Газ.</p>
+            <p><strong>Эффект:</strong> Короткая эйфория.</p>
+            <p><strong>Как выглядит:</strong> Баллончики.</p>
+        </div>
+        <div class="card">
+            <h2>Клеевая смесь (Толуол)</h2>
+            <p><strong>Что это:</strong> Игалянт.</p>
+            <p><strong>Эффект:</strong> Туман в голове.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Бензин</h2>
+            <p><strong>Что это:</strong> Игалянт.</p>
+            <p><strong>Эффект:</strong> Головокружение.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Бутират</h2>
+            <p><strong>Что это:</strong> Депрессант.</p>
+            <p><strong>Эффект:</strong> Эйфория, расслабление.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>JWH-018</h2>
+            <p><strong>Что это:</strong> Синтетический каннабиноид.</p>
+            <p><strong>Эффект:</strong> Эйфория, тревога.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>AM-2201</h2>
+            <p><strong>Что это:</strong> Синтетический каннабиноид.</p>
+            <p><strong>Эффект:</strong> Сильный "кайф".</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>UR-144</h2>
+            <p><strong>Что это:</strong> Синтетический каннабиноид.</p>
+            <p><strong>Эффект:</strong> Расслабление.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>5F-AKB48</h2>
+            <p><strong>Что это:</strong> Синтетический каннабиноид.</p>
+            <p><strong>Эффект:</strong> Эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>XLR-11</h2>
+            <p><strong>Что это:</strong> Синтетический каннабиноид.</p>
+            <p><strong>Эффект:</strong> Тревожный трип.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>MXE (Метоксетамин)</h2>
+            <p><strong>Что это:</strong> Диссоциатив.</p>
+            <p><strong>Эффект:</strong> Отрыв от реальности.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>3-MeO-PCP</h2>
+            <p><strong>Что это:</strong> Диссоциатив.</p>
+            <p><strong>Эффект:</strong> Сильные трипы.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>BZP (Бензилпиперазин)</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Энергия, слабый кайф.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>TFMPP</h2>
+            <p><strong>Что это:</strong> Стимулятор.</p>
+            <p><strong>Эффект:</strong> Легкая эйфория.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>МPPP</h2>
+            <p><strong>Что это:</strong> Синтетический опиоид.</p>
+            <p><strong>Эффект:</strong> Эйфория, токсичность.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>U-47700</h2>
+            <p><strong>Что это:</strong> Синтетический опиоид.</p>
+            <p><strong>Эффект:</strong> Мощный кайф.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>AH-7921</h2>
+            <p><strong>Что это:</strong> Синтетический опиоид.</p>
+            <p><strong>Эффект:</strong> Расслабление.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <!-- Новые вещества от меня -->
+        <div class="card">
+            <h2>Триптамин</h2>
+            <p><strong>Что это:</strong> Базовый психоделик, основа для ДMT.</p>
+            <p><strong>Эффект:</strong> Легкие визуалы, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Белый порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Фенилэтиламин (PEA)</h2>
+            <p><strong>Что это:</strong> Натуральный стимулятор, в шоколаде.</p>
+            <p><strong>Эффект:</strong> Кратковременная бодрость, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Сативекс (Набиксимолс)</h2>
+            <p><strong>Что это:</strong> Лекарство на основе каннабиса.</p>
+            <p><strong>Эффект:</strong> Расслабление, обезболивание.</p>
+            <p><strong>Как выглядит:</strong> Спрей.</p>
+        </div>
+        <div class="card">
+            <h2>Ксантин (Кофеин)</h2>
+            <p><strong>Что это:</strong> Стимулятор из кофе и чая.</p>
+            <p><strong>Эффект:</strong> Бодрость, концентрация.</p>
+            <p><strong>Как выглядит:</strong> Порошок или таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>DXM (Гель-форма)</h2>
+            <p><strong>Что это:</strong> Диссоциатив из сиропов от кашля.</p>
+            <p><strong>Эффект:</strong> Тяжелые трипы, отрыв от тела.</p>
+            <p><strong>Как выглядит:</strong> Гель-капсулы.</p>
+        </div>
+        <div class="card">
+            <h2>Никотин</h2>
+            <p><strong>Что это:</strong> Стимулятор из табака.</p>
+            <p><strong>Эффект:</strong> Легкая бодрость, расслабление.</p>
+            <p><strong>Как выглядит:</strong> Жидкость или сигареты.</p>
+        </div>
+        <div class="card">
+            <h2>Ареколин</h2>
+            <p><strong>Что это:</strong> Стимулятор из ореха бетеля.</p>
+            <p><strong>Эффект:</strong> Энергия, тепло.</p>
+            <p><strong>Как выглядит:</strong> Орех или порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Теобромин</h2>
+            <p><strong>Что это:</strong> Стимулятор из какао.</p>
+            <p><strong>Эффект:</strong> Мягкая бодрость, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Гуарана</h2>
+            <p><strong>Что это:</strong> Растительный стимулятор с кофеином.</p>
+            <p><strong>Эффект:</strong> Долгая энергия.</p>
+            <p><strong>Как выглядит:</strong> Семена или порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Йохимбин</h2>
+            <p><strong>Что это:</strong> Стимулятор из коры дерева.</p>
+            <p><strong>Эффект:</strong> Энергия, возбуждение.</p>
+            <p><strong>Как выглядит:</strong> Таблетки или порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Эткатinon</h2>
+            <p><strong>Что это:</strong> Синтетический аналог катинона.</p>
+            <p><strong>Эффект:</strong> Энергия, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Пирцетам</h2>
+            <p><strong>Что это:</strong> Ноотроп с легким стимулирующим эффектом.</p>
+            <p><strong>Эффект:</strong> Ясность ума.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Амантадин</h2>
+            <p><strong>Что это:</strong> Лекарство с легким стимулирующим эффектом.</p>
+            <p><strong>Эффект:</strong> Бодрость, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Леводопа</h2>
+            <p><strong>Что это:</strong> Прекурсор дофамина.</p>
+            <p><strong>Эффект:</strong> Энергия, подъем настроения.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Дatura (Дурман)</h2>
+            <p><strong>Что это:</strong> Растительный психоделик/яд.</p>
+            <p><strong>Эффект:</strong> Сильные галлюцинации, спутанность.</p>
+            <p><strong>Как выглядит:</strong> Семена или листья.</p>
+        </div>
+        <div class="card">
+            <h2>Хава (Пиперин)</h2>
+            <p><strong>Что это:</strong> Растительный стимулятор из перца.</p>
+            <p><strong>Эффект:</strong> Легкая бодрость.</p>
+            <p><strong>Как выглядит:</strong> Порошок.</p>
+        </div>
+        <div class="card">
+            <h2>Синефрин</h2>
+            <p><strong>Что это:</strong> Стимулятор из цитрусов.</p>
+            <p><strong>Эффект:</strong> Энергия, термогенез.</p>
+            <p><strong>Как выглядит:</strong> Порошок или таблетки.</p>
+        </div>
+        <div class="card">
+            <h2>Кавеин</h2>
+            <p><strong>Что это:</strong> Депрессант из растения кава.</p>
+            <p><strong>Эффект:</strong> Расслабление, эйфория.</p>
+            <p><strong>Как выглядит:</strong> Порошок или напиток.</p>
+        </div>
+        <div class="card">
+            <h2>Мирамистин</h2>
+            <p><strong>Что это:</strong> Антисептик, при злоупотреблении — легкий трип.</p>
+            <p><strong>Эффект:</strong> Странные ощущения.</p>
+            <p><strong>Как выглядит:</strong> Жидкость.</p>
+        </div>
+        <div class="card">
+            <h2>Тианептин</h2>
+            <p><strong>Что это:</strong> Антидепрессант с опиоидным эффектом.</p>
+            <p><strong>Эффект:</strong> Эйфория, расслабление.</p>
+            <p><strong>Как выглядит:</strong> Таблетки.</p>
+        </div>
+    </div>
+</body>
+</html>
