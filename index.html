@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Substance Vibe</title>
     <style>
+        .navbar {
+    background: #2e2e2e;
+    padding: 10px;
+    text-align: center;
+}
+.navbar a {
+    color: #00ff99;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.navbar a:hover {
+    text-shadow: 0 0 10px #00ff99;
+}
+.contact-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #ff00ff;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+.contact-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff00ff;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00ff99;
+    text-align: center;
+    position: relative;
+}
+.modal-content p {
+    font-size: 1.2em;
+    color: #00ff99;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff00ff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.close:hover {
+    color: #00ff99;
+}
         body {
             margin: 0;
             padding: 0;
@@ -69,7 +132,17 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+    <a href="https://geroinc4ek.github.io/GoreAndCrislte/" target="_blank">GoreAndCrislte</a>
+</nav>
     <div class="header">
+        <button class="contact-btn" onclick="showContact()">Связи</button>
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideContact()">&times;</span>
+        <p>По всем вопросам: GoreAndCristle@gmail.com</p>
+    </div>
+</div>
         <h1>Substance Vibe</h1>
         <p>Know the game, don’t play it</p>
     </div>
@@ -965,5 +1038,13 @@
 </div>
         </div>
     </div>
+    <script>
+    function showContact() {
+        document.getElementById("contact-modal").style.display = "flex";
+    }
+    function hideContact() {
+        document.getElementById("contact-modal").style.display = "none";
+    }
+</script>
 </body>
 </html>
